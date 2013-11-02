@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/beige.css" id="theme">
     <link href='http://fonts.googleapis.com/css?family=Bubbler+One' rel='stylesheet' type='text/css'>
-
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' +
+        ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
   </head>
 
   <body>
@@ -232,7 +236,7 @@
               <li>Javascript</li>
               <li>backbone.js</li>
               <li>Go</li>
-              <li>Scale</li>
+              <li>Scala</li>
               <li>Elixir</li>
               <li>Design responsivo</li>
               <li>Testes, testes e mais testes: garanta a qualidade de seu software</li>
@@ -311,7 +315,8 @@
         ]
       });
 
-    </script>
 
+
+    </script>
   </body>
 </html>
