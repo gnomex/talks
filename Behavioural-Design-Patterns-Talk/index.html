@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Behavioural Design Patterns</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="icons.css">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Behavioural Design Patterns</h1>
+				</section>
+
+				<section>
+					<div>
+            <p style="font-family: 'Bubbler One', sans-serif; font-size: 50px;">Kenner Kliemann</p>
+            <small><span><a href="https://github.com/gnomex">@gnomex</a></span></small>
+          </div>
+          <div>
+            <p style="font-family: 'Bubbler One', sans-serif; font-size: 50px;">Jann Claude Mousquer</p>
+            <small><span><a href="https://github.com/janncm">@janncm</a></span></small>
+          </div>
+				</section>
+
+				<section>
+
+					<h1>Faculdades Anglo-Americano (FAA)</h1>
+ 					<h3>Curso de Ciencia da Computação</h3>
+ 					<p>
+ 						Foz do Iguaçu, PR - Brasil
+ 					</p>
+
+				</section>
+
+				<section>
+					<h1>GoF</h1>
+					 <p>
+					 	é uma abreviação para ”Gang of Four” e refere-se aos quatro escritores do livro ”Design Patterns: Elements of Reusable Object-Oriented Software”.
+					 </p>
+					 <a href="#" class="image">
+						<img width="200" height="300" src="images/Design-Patterns_Elements_of_Reusable_Object-Oriented_Software.jpg" alt="Down arrow">
+					</a>
+				</section>
+
+				<section>
+					Design patterns torna mais fácil reutilizar projetos e arquiteturas bem sucedidas. Design é uma forma de interpretar a implementação, analisando e compreendendo as interações entre determinadas partes do sistema. Os patterns comportamentais estão preocupados com os algoritmos e as atribuições de responsabilidade entre objetos. Descrevem não só os padrões entre objetos ou classes, mas também os padrões de comunicação entre eles.
+				</section>
+
+				<section>
+					 Padrões de projeto tornam mais fácil reutilizar projetos e arquiteturas bem sucedidas. Expressando técnicas comprovadas como padrões de projeto os tornam mais acessíveis aos desenvolvedores dos sistemas. Os padrões de design ajudam a escolher alternativas de projetos que tornam um sistema reutilizável e evitam as alternativas que comprometam a reusabilidade.
+				</section>
+
+				<section>
+					<p><strong>GoF</strong> definem os patterns por dois critérios: propósito e escopo</p>
+					 <a href="#" class="image">
+						<img width="800" height="600" src="images/gofPatterns.jpg" alt="Down arrow">
+					</a>
+				</section>
+
+				<section>
+					<section>
+						    Padrões comportamentais estão preocupados com os algoritmos e as atribuições de responsabilidade entre objetos. Descrevem não só os padrões entre objetos ou classes, mas também os padrões de comunicação entre eles.
+					</section>
+					<section>
+						Estes padrões caracterizam um complexo ﬂuxo de controle que é difícil de seguir em tempo de execução. Eles transportam a atenção para longe do ﬂuxo de controle e permite ao programador se concentrar apenas no modo como os objetos estão interconectados.
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Chain of responsibility</h1>
+						<p>Evitar o acoplamento do emissor (sender) de um pedido para o seu receptor (receiver), dando mais de um objeto a chance de lidar com o pedido.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Mais de um objeto pode lidar com uma requisição e o manipulador não é conhecido. O manipulador deve ser determinado automaticamente;</li>
+							<li>Emissão de um pedido a um dos vários objetos, sem especificar o receptor de forma explicita;</li>
+							<li>O conjunto de objetos que podem lidar com um pedido deve ser especificado dinamicamente.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Command</h1>
+						<p> É possível encapsular uma requisição como um objeto, permitindo que clientes parametrizem diferentes requisições, enfileirem ou façam o registro de requisições e suportem operações que podem ser desfeitas.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Parametrizar objetos para uma ação a ser tomada;</li>
+							<li>Especificar, enfileirar e executar solicitações em tempos diferentes. Um objeto de comando pode ter uma vida independente da solicitação original;</li>
+							<li> Suporte a desfazer. O Command pode armazenar as operações de execução, armazenando seus estados e possibilitando desfazer os mesmos;</li>
+							<li>Suporte a mudanças de registro, para que possam ser reaplicadas em caso de uma falha do sistema;</li>
+							<li>Estruturar um sistema em torno de operações de alto nível construídas sobre operações primitivas. Tal estrutura é comum em sistemas de informação que suportam transações. A transação encapsula um conjunto de alterações aos dados.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Interpret</h1>
+						<p>Dada uma linguagem, define uma representação para sua gramática juntamente com um interpretador que usa a representação para interpretar sentenças na língua.</p>
+						<p> Se um determinado tipo de problema ocorre com frequência suficiente, então ele pode ser útil para expressar instâncias do problema como sentenças em uma linguagem formal.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Unicamente para interpretação de linguagens. Como, por exemplo, expressões regulares.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Iterator</h1>
+						<p> É fornecer uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Acessar o conteúdo de objeto agregados sem expor sua representação interna;</li>
+							<li>Suporte a mais de uma maneira de percorrer a coleção;</li>
+							<li>Prover interface única para percorrer estruturas agregadas diferentes.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Mediator</h1>
+						<p> Um Mediator define um objeto que encapsula como um grupo de objetos interage. Promove o desacoplamento, mantendo referências explícitas entre os objetos e permite variar suas interações de forma independente.</p>
+						<p> A ideia do padrão Mediator é semelhante à ideia de central telefônica. Eliminar conexões excessivas entre elementos por meio da introdução de um intermediário único</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Um conjunto de objetos se comunica de maneiras bem definidas, mas complexas. As interdependências resultantes são não estruturadas e de difícil compreensão;</li>
+							<li>Reutilização de um objeto é difícil porque ele se refere e se comunica com muitos outros objetos;</li>
+							<li>Um comportamento que é distribuído entre várias classes deve ser personalizável sem criar diversas subclasses.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Memento</h1>
+						<p>Sem violar o encapsulamento, captura e externaliza o estado interno de um objeto para que o objeto possa ser restaurado mais tarde.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Para o armazenamento de estados a serem restaurados de um objeto, como por exemplo, um banco de dados;</li>
+							<li>Para a captação de estados de objetos que são encobertos por encapsulamento.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Observer</h1>
+						<p>Define uma dependência um-para-muitos entre objetos de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.</p>
+						<p>A ideia fundamental do padrão Observer é atribuir aos objetos que tem seus estados alterados a tarefa de notificar os objetos interessados nessas mudanças.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Quando uma abstração possui dois aspectos, um dependente do outro. Encapsular estes aspectos em objetos diferentes permite que você os modifique e reutilize de forma independente;</li>
+							<li>Quando uma mudança em um objeto requer a mudança em outros e você não sabe quantos e quais objetos precisam ser modificados. Ou seja, não se deseja um alto acoplamento entre estes objetos.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>State</h1>
+						<p>Permitir que um objeto altere o seu comportamento como consequência de uma mudança no seu estado interno.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Quando o comportamento do objeto depende do seu estado e este comportamento deve ser modificado em run-time;</li>
+							<li>Quando os métodos possuem sentenças condicionais grandes e com várias opções. O padrão State coloca cada ramo da sentença condicional em uma classe separada.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Strategy</h1>
+						<p> Definir uma família de algoritmos, encapsular cada um e torná-los intercambiáveis. Estratégia permite que o algoritmo varie independentemente dos clientes que o utilizam.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Quando muitas classes relacionadas diferem somente no seu comportamento;</li>
+							<li>Quando é necessário utilizar diferentes variações de um algoritmo;</li>
+							<li>Quando um algoritmo utiliza dados que não devem estar expostos aos clientes;</li>
+							<li>Quando uma classe define múltiplos comportamentos através de sentenças condicionais em seus métodos.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Template Method</h1>
+						<p>Definir o esqueleto de um algoritmo em uma operação, adiando alguns passos para subclasses. Template Method permite que subclasses redefinam determinadas etapas de um algoritmo sem alterar a estrutura do algoritmo.</p>
+						<p>A ideia fundamental desse padrão é definir a ordem de execução dos passos que resolvem um determinado problema e permitir que cada passo possa ser implementado de maneiras diferentes.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Implementação única das partes invariantes de um algoritmo e deixar que subclasses implementem o comportamento que varia;</li>
+							<li>Quando um comportamento comum entre subclasses deve ser fatorado e localizado em uma classe comum, com o objetivo de evitar repetição de código;</li>
+							<li>Para controlar as extensões realizadas pelas subclasses. O Template Method pode definir operações hook em pontos específicos e, portanto, permitindo variações somente nestes locais.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Visitor</h1>
+						<p>Representar uma operação a ser realizada sobre os elementos de uma estrutura de objeto. Visitor permite que você defina uma nova operação sem mudar as classes dos elementos sobre os quais opera.</p>
+						<p>Permite atualizações específicas em uma coleção de objetos de acordo com o tipo particular de cada objeto atualizado.</p>
+					</section>
+					<section>
+						<p>Indicado para</p>
+						<ul>
+							<li>Quando um agregado contém objetos de diversas classes (com diferentes interfaces) e deseja-se realizar operações nestes objetos que dependem das suas classes concretas;</li>
+							<li>Quando muitas operações distintas e não relacionadas precisam ser aplicadas a um agregado e não se deseja poluir as classes dos objetos do agregado com tais operações;</li>
+							<li> Quando as classes que definem os objetos do agregado raramente mudam, porém definem-se novas operações com certa frequência.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h1>Conclusão</h1>
+					<p>Padrões de projeto são otimizados, sendo as soluções reutilizáveis para os problemas de programação que nos deparamos todos os dias. Um padrão de design não é uma classe ou uma biblioteca que podemos simplesmente plugar em nosso software; é muito mais do que isso. É um molde que tem de ser aplicada na situação correta. Também não é específico de linguagem. Um padrão de design bom deve ser implementável na maioria (se não em todas) as linguagens, dependendo de seus recursos. Ainda, qualquer padrão de design pode ser uma faca de dois gumes, pois se implementado no lugar errado pode ser desastrosa e criar muitos problemas. No entanto, implementado no lugar certo, na hora certa, ele pode ser a solução.</p>
+				</section>
+
+        <!-- Finals -->
+        <section data-transition="linear" data-background="#4d7eA5" data-background-transition="slide" class="ask">
+          <h1>Dúvidas, Sugestões ?!</h1>
+        </section>
+
+        <section data-transition="linear" data-background="#81a738" data-background-transition="slide" class="ask">
+          <h1>Obrigado</h1>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
