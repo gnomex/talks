@@ -69,7 +69,9 @@ function detectFormFactor() {
 
 ---
 
-title: Centered content
-content_class: flexbox vcenter
+title: Show me the code
 
-This content should be centered!
+<pre class="prettyprint" data-lang="github">
+  https://github.com/gnomex/uploader-as-a-service-rails-coposer
+</pre>
+

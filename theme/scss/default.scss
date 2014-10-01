@@ -165,8 +165,6 @@ slides > slide {
   }
 
   &:not(.nobackground) {
-    //background: white url(../../images/google_developers_icon_128.png) ($brand-small-icon-size * 2) 98% no-repeat;
-    //@include background-size($brand-small-icon-size $brand-small-icon-size);
 
     &:before {
       font-size: 12pt;
@@ -190,18 +188,18 @@ slides > slide {
     }
   }
 
-  &.title-slide {
-    &:after {
-      content: '';
-      background: url(../../images/io2012_logo.png) no-repeat 100% 50%;
-      @include background-size(contain);
-      position: absolute;
-      bottom: $slide-top-bottom-padding;
-      right: $slide-top-bottom-padding;
-      width: 100%;
-      height: 60px;
-    }
-  }
+  // &.title-slide {
+  //   &:after {
+  //     content: '';
+  //     background: url(../../images/io2012_logo.png) no-repeat 100% 50%;
+  //     @include background-size(contain);
+  //     position: absolute;
+  //     bottom: $slide-top-bottom-padding;
+  //     right: $slide-top-bottom-padding;
+  //     width: 100%;
+  //     height: 60px;
+  //   }
+  // }
 
   &.backdrop {
     z-index: -10;
@@ -836,10 +834,10 @@ article.smaller {
 
 /* ===== SLIDE CONTENT ===== */
 .logoslide {
-  img {
-    width: 383px;
-    height: 92px;
-  }
+  // img {
+  //   width: 383px;
+  //   height: 92px;
+  // }
 }
 
 .segue {
