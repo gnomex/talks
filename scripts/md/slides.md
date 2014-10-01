@@ -1,5 +1,10 @@
-title: Segue Slide
-subtitle: Subtitle
+content_class: flexbox vcenter
+
+FACULDADE ANGLO-AMERICANO - FAA
+
+---
+
+title: Projeto de estágio supervisionado
 class: segue dark nobackground
 
 ---
