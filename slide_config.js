@@ -1,11 +1,11 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Lol',
-    subtitle: 'Hehehe',
+    title: 'Uploader as a Service',
+    subtitle: 'Rails Composer',
     eventInfo: {
      title: 'Google I/O',
-     date: '1/06/2014'
+     date: '1/10/2014'
     },
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
@@ -26,13 +26,6 @@ var SLIDE_CONFIG = {
     company: 'Researcher at CELTAB',
     twitter: '@kennerkliemann',
     github: 'https://github.com/gnomex'
-  }/*, {
-    name: 'Second Name',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
-  }*/]
+  }]
 };
 
