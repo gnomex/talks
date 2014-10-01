@@ -5,67 +5,53 @@ FACULDADE ANGLO-AMERICANO - FAA
 ---
 
 title: Projeto de estágio supervisionado
-class: segue dark nobackground
+subtitle: Template rails para upload como serviço com REST api e abstração da infraestrutura de armazenamento
+class: segue dark
 
 ---
 
-title: Agenda
-class: big
-build_lists: true
+title: Storage Services
+class: fill
+content_class: flexbox vcenter
 
-Things we'll cover (list should build):
+![Google Cloud Platform](images/gcp-logo.png)
+![Amazon S3](images/amazon_aws-s3.png)
 
-- Bullet1
-- Bullet2
-- Bullet3
-
----
-
-title: Today
-class: nobackground fill
-
-![Many kinds of devices.](image.png)
-
-<footer class="source">source: place source info here</footer>
+- Local
+- LVM
+- PostgreSQL
+- MongoDB
 
 ---
 
-title: Big Title Slide
-class: title-slide
+title: Conjuntos de Design
+class: fill
+content_class: flexbox vcenter
+
+- Segurança de APIs
+- Autenticação
+- Melhores práticas
 
 ---
 
-title: Code Example
+title: Linguagens e ferramentas
+class: fill
+content_class: flexbox vcenter
 
-Media Queries are sweet:
-
-<pre class="prettyprint" data-lang="css">
-@media screen and (max-width: 640px) {
-  #sidebar { display: none; }
-}
-</pre>
+- Ruby
+- Rails
+- Javascript
+- Servidores HTTP
 
 ---
 
-title: Once more, with JavaScript
+title: DevOps
+class: fill
+content_class: flexbox vcenter
 
-<pre class="prettyprint" data-lang="javascript">
-function isSmall() {
-  return window.matchMedia("(min-device-width: ???)").matches;
-}
-
-function hasTouch() {
-  return Modernizr.touch;
-}
-
-function detectFormFactor() {
-  var device = DESKTOP;
-  if (hasTouch()) {
-    device = isSmall() ? PHONE : TABLET;
-  }
-  return device;
-}
-</pre>
+- VM para deploy
+- Deploy automatizado
+- Nginx + unicorn
 
 ---
 

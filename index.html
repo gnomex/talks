@@ -27,11 +27,15 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slides class="layout-widescreen">
 
-<slide class="logoslide nobackground">
+<!-- <slide class="logoslide nobackground">
   <article class="flexbox vcenter">
     <span><img src="images/google_developers_logo.png"></span>
   </article>
-</slide>
+</slide> -->
+
+  <slide class="fill nobackground" style="background-image: url(images/Tools-for-Ruby-on-Rails-logo.jpg)">
+
+  </slide>
 
 <slide class="title-slide segue nobackground">
   <aside class="gdbar"><img src="images/services-icons-ruby.png"></aside>
@@ -54,90 +58,73 @@ URL: https://code.google.com/p/io-2012-slides
  
 </slide>
 
-<slide class="segue dark nobackground" >
+<slide class="segue dark" >
   
     <aside class="gdbar"><img src="images/services-icons-ruby.png"></aside>
     <hgroup class="auto-fadein">
       <h2>Projeto de estágio supervisionado</h2>
-      <h3></h3>
+      <h3>Template rails para upload como serviço com REST api e abstração da infraestrutura de armazenamento</h3>
     </hgroup>
   
 </slide>
 
-<slide class="big" >
+<slide class="fill" >
   
     <hgroup>
-      <h2>Agenda</h2>
+      <h2>Storage Services</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>Things we'll cover (list should build):</p>
-<ul class="build">
-<li>Bullet1</li>
-<li>Bullet2</li>
-<li>Bullet3</li>
+    <article class="flexbox vcenter"><p><img alt="Google Cloud Platform" src="images/gcp-logo.png" />
+<img alt="Amazon S3" src="images/amazon_aws-s3.png" /></p>
+<ul>
+<li>Local</li>
+<li>LVM</li>
+<li>PostgreSQL</li>
+<li>MongoDB</li>
 </ul></article>
  
 </slide>
 
-<slide class="nobackground fill" >
+<slide class="fill" >
   
     <hgroup>
-      <h2>Today</h2>
+      <h2>Conjuntos de Design</h2>
       <h3></h3>
     </hgroup>
-    <article ><p><img alt="Many kinds of devices." src="image.png" /></p>
-<footer class="source">source: place source info here</footer></article>
+    <article class="flexbox vcenter"><ul>
+<li>Segurança de APIs</li>
+<li>Autenticação</li>
+<li>Melhores práticas</li>
+</ul></article>
  
 </slide>
 
-<slide class="title-slide" >
+<slide class="fill" >
   
     <hgroup>
-      <h2>Big Title Slide</h2>
+      <h2>Linguagens e ferramentas</h2>
       <h3></h3>
     </hgroup>
-    <article ></article>
+    <article class="flexbox vcenter"><ul>
+<li>Ruby</li>
+<li>Rails</li>
+<li>Javascript</li>
+<li>Servidores HTTP</li>
+</ul></article>
  
 </slide>
 
-<slide  >
+<slide class="fill" >
   
     <hgroup>
-      <h2>Code Example</h2>
+      <h2>DevOps</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>Media Queries are sweet:</p>
-<pre class="prettyprint" data-lang="css">
-@media screen and (max-width: 640px) {
-  #sidebar { display: none; }
-}
-</pre></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
-      <h2>Once more, with JavaScript</h2>
-      <h3></h3>
-    </hgroup>
-    <article ><pre class="prettyprint" data-lang="javascript">
-function isSmall() {
-  return window.matchMedia("(min-device-width: ???)").matches;
-}
-
-function hasTouch() {
-  return Modernizr.touch;
-}
-
-function detectFormFactor() {
-  var device = DESKTOP;
-  if (hasTouch()) {
-    device = isSmall() ? PHONE : TABLET;
-  }
-  return device;
-}
-</pre></article>
+    <article class="flexbox vcenter"><ul>
+<li>VM para deploy</li>
+<li>Deploy automatizado</li>
+<li>Nginx + unicorn</li>
+</ul></article>
  
 </slide>
 
@@ -175,9 +162,6 @@ function detectFormFactor() {
 </slides>
 
 <script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
 
 (function() {
   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
